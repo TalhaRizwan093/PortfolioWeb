@@ -5,11 +5,10 @@ gsap.to(".info-card", {
         trigger: ".info-card",
         start: "top bottom",
         end: "100px 250px",
-        markers: true,
-        toggleActions: "restart pause reverse pause",
+        scrub: 1,
     },
     y: "-25%",
-    duration: 1,
+    duration: 3,
 
 
 });
