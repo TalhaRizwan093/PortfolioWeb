@@ -76,7 +76,10 @@ html, body {
 }
 
 .first-section{
+    display: flex;
     text-align: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .main-title{
@@ -89,6 +92,7 @@ html, body {
     height: 10%;
     border-radius: 50%;
     margin-top: 1%;
+    
 }
 
 .clipart{
@@ -100,13 +104,81 @@ html, body {
 .second-section{
     background-color: #7510F7;
     padding: 10rem;
+
+
+}
+
+.container{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
 .info{
-    display: flex;
-    align-items: center;
-    justify-content: center;
     color: white;
+}
+
+@media screen and (max-width: 550px){
+    .main-nav{
+        display: none;
+    }
+
+    .main-header{
+        display: inline-block;
+        width: 100%;
+    }
+
+    .nav-left{
+        display: inline-block;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+
+
+    .logo{
+        margin-left: 0px;
+    }
+
+
+
+}
+
+.info-card{
+    display: flex;
+    justify-content:center;
+    flex-grow: inherit;
+    
+}
+
+
+
+.card1{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 30%;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    margin-right: 2rem;
+}
+
+.card2{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 30%;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px
+}
+
+.card1:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card2:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
 /* width */
